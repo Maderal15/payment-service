@@ -56,7 +56,7 @@ public class PaymentController {
     
     @ApiOperation(httpMethod = "POST", value = "Método post para salvar um pagamento.")
     @ApiResponses(value = {
-    		@ApiResponse(code = 200, message = "Retorna uma com uma mensagem  /payment/?",  response = PaymentDTO.class),
+    		@ApiResponse(code = 201, message = "Retorna uma com uma mensagem  /payment/?",  response = PaymentDTO.class),
     		@ApiResponse(code = 404, message = "Numero do cartão não encontrado, erro para cadastrar.",  response = ExceptionResponse.class)
     })
     @PostMapping
